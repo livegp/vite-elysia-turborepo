@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development bun --watch index.ts",
-    "build": "bun build --define process.env.NODE_ENV=\"'production'\" index.ts --outdir dist --minify-whitespace --minify-syntax --sourcemap --target bun",
-    "build:binary": "bun build --define process.env.NODE_ENV=\"'production'\" index.ts --outfile dist/server --compile --minify-whitespace --minify-syntax --sourcemap --target bun",
+    "build": "bun build.ts",
+    "build:binary": "bun build --define process.env.NODE_ENV=\"'production'\" index.ts --outfile ../../dist/backend/server --compile --minify-whitespace --minify-syntax --sourcemap --target bun",
     "preview": "bun dist/index.js",
     "preview:binary": "bun dist/server"
   },

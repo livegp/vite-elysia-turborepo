@@ -2,10 +2,14 @@
   "name": "vite-elysia-turborepo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:backend": "turbo run dev --filter=backend",
+    "dev:frontend": "turbo run dev --filter=frontend",
+    "build": "turbo run build",
+    "build:backend": "turbo run build --filter=backend",
+    "build:frontend": "turbo run build --filter=frontend",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write .",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {

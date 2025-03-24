@@ -7,8 +7,12 @@
       "cache": false
     },
     "build": {
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": [
-        "dist/**"
+        "dist/**/*",
+        "../../dist/**/*"
       ]
     },
     "lint": {
