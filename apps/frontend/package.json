@@ -2,8 +2,8 @@
   "name": "@vite-elysia/frontend",
   "version": "0.0.1",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/react": "^19.0.12",
@@ -11,9 +11,9 @@
     "@vitejs/plugin-react-swc": "^3.8.1",
     "globals": "^16.0.0",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.27.0",
-    "vite": "^6.2.2",
-    "vite-plugin-pwa": "1.0.0"
+    "typescript-eslint": "^8.28.0",
+    "vite": "^6.2.3",
+    "vite-plugin-pwa": "^1.0.0"
   },
   "private": true,
   "scripts": {
