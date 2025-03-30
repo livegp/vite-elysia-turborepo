@@ -19,9 +19,9 @@
   },
 
   // File system settings
-  "files.exclude": {
-    "node_modules": true
-  },
+  // "files.exclude": {
+  //   "node_modules": true
+  // },
 
   // GitHub Copilot settings
   "github.copilot.chat.codeGeneration.instructions": [

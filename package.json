@@ -3,16 +3,13 @@
   "private": true,
   "scripts": {
     "dev": "turbo run dev",
-    "dev:backend": "turbo run dev --filter=backend",
-    "dev:frontend": "turbo run dev --filter=frontend",
     "build": "turbo run build",
-    "build:backend": "turbo run build --filter=backend",
-    "build:frontend": "turbo run build --filter=frontend",
-    "lint": "turbo run lint",
+    "preview": "turbo run preview",
     "check-types": "turbo run check-types",
     "format": "biome format --write --unsafe",
     "lint": "biome lint --write --unsafe",
-    "check": "biome check --write --unsafe"
+    "check": "biome check --write --unsafe",
+    "verify": "turbo run check-types lint format"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.0-beta.1",
