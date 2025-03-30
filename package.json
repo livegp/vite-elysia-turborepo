@@ -1,26 +1,31 @@
 {
   "name": "@vite-elysia/turborepo",
-  "private": true,
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "preview": "turbo run preview",
-    "check-types": "turbo run check-types",
-    "format": "biome format --write --unsafe",
-    "lint": "biome lint --write --unsafe",
-    "check": "biome check --write --unsafe",
-    "verify": "turbo run check-types lint format"
+  "version": "0.0.1",
+  "dependencies": {
+    "syncpack": "^13.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.0-beta.1",
     "lefthook": "^1.11.5",
     "turbo": "^2.4.4",
-    "typescript": "5.8.2"
+    "typescript": "^5.8.2"
   },
   "engines": {
     "bun": ">=1.2.5"
   },
   "packageManager": "bun@1.2.5",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "check": "biome check --write --unsafe",
+    "check-types": "turbo run check-types",
+    "dev": "turbo run dev",
+    "format": "biome format --write --unsafe",
+    "lint": "biome lint --write --unsafe",
+    "preview": "turbo run preview",
+    "update-deps": "bun update",
+    "verify": "turbo run check-types lint format"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"

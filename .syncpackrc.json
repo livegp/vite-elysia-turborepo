@@ -1,0 +1,11 @@
+{
+  "semverGroups": [
+    {
+      "range": "^",
+      "dependencies": ["*"],
+      "dependencyTypes": ["prod", "dev"],
+      "packages": ["*"]
+    }
+  ],
+  "source": ["package.json", "packages/*/package.json"]
+}

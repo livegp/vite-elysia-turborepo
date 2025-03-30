@@ -32,6 +32,10 @@
     "verify": {
       "dependsOn": ["check-types", "lint", "format"],
       "cache": true
+    },
+    "update-deps": {
+      "cache": false,
+      "persistent": true
     }
   }
 }

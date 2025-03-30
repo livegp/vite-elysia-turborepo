@@ -1,22 +1,6 @@
 {
   "name": "@vite-elysia/backend",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "NODE_ENV=development bun --watch src/index.ts",
-    "build": "bun build.ts",
-    "build:binary": "bun build --define process.env.NODE_ENV=\"'production'\" build.ts --outfile ../../dist/backend/server --compile --minify-whitespace --minify-syntax --sourcemap --target bun",
-    "preview": "bun dist/index.js",
-    "preview:binary": "bun dist/server",
-    "check-types": "tsc --noEmit"
-  },
-  "devDependencies": {
-    "@types/bun": "^1.2.5"
-  },
-  "peerDependencies": {
-    "typescript": "^5.8.2"
-  },
+  "version": "0.0.1",
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",
     "@elysiajs/eden": "^1.2.0",
@@ -25,5 +9,23 @@
     "@yolk-oss/elysia-env": "^2.0.0",
     "elysia": "^1.2.25",
     "elysiajs-helmet": "^1.0.2"
-  }
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.8"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "private": true,
+  "scripts": {
+    "build": "bun build.ts",
+    "build:binary": "bun build --define process.env.NODE_ENV=\"'production'\" build.ts --outfile ../../dist/backend/server --compile --minify-whitespace --minify-syntax --sourcemap --target bun",
+    "check-types": "tsc --noEmit",
+    "dev": "NODE_ENV=development bun --watch src/index.ts",
+    "preview": "bun dist/index.js",
+    "preview:binary": "bun dist/server",
+    "update-deps": "bun update"
+  },
+  "type": "module"
 }
