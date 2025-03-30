@@ -43,6 +43,7 @@ yarn-error.log*
 .npm
 .eslintcache
 .stylelintcache
+.tsbuildinfo
 .node_repl_history
 tmp
 temp

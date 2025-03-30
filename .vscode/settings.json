@@ -1,24 +1,50 @@
 {
+  // Editor settings
   "editor.codeActionsOnSave": {
-    "source.organizeImports.biome": "explicit",
-    "source.fixAll.biome": "explicit"
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
-  "[typescriptreact]": {
+
+  // Language specific settings
+  "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.preferences.autoImportFileExcludePatterns": [],
+
+  // File system settings
   "files.exclude": {
     "node_modules": true
   },
-  "projectManager.vscode.ignoredFolders": ["node_modules"]
+
+  // GitHub Copilot settings
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "Provide answers in Ukrainian"
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Provide answers in Ukrainian"
+    }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "text": "Provide answers in Ukrainian"
+    }
+  ],
+
+  // Project settings
+  "projectManager.vscode.ignoredFolders": ["node_modules"],
+
+  // TypeScript settings
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.autoImportFileExcludePatterns": [],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
