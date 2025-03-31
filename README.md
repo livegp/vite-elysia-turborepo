@@ -4,7 +4,7 @@
 
 ## Структура проекту
 
-```
+```plaintext
 apps/
   ├── client/     # Vite frontend додаток
   └── server/     # Elysia backend додаток
