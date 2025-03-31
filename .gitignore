@@ -8,7 +8,6 @@ bun.lockb
 
 # Version Control
 .gitattributes
-.github
 
 # Docker related
 .docker
@@ -54,29 +53,18 @@ temp
 !.env.example
 
 # Documentation and Assets
-README.md
-CHANGELOG.md
-docs/
-*.md
 assets
-Makefile
 
 # Testing and Coverage
 coverage
 coverage*
 .nyc_output
-__tests__
-test
-tests
-*.spec.*
-*.test.*
 
 # Build Outputs
 .next/
 out/
 build/
 dist/
-public
 .output
 
 # Turbo
@@ -94,3 +82,5 @@ Thumbs.db
 *.pem
 Desktop.ini
 $RECYCLE.BIN/
+ehthumbs.db
+ehthumbs_vista.db
