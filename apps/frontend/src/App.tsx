@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { treaty } from '@elysiajs/eden'
-import type { App } from '../../server/index'
 
+import type { App } from '../../backend/src/index'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
